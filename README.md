@@ -1,41 +1,58 @@
 # Interior-Web-Design
 
-Ye project scaffold hai: **Vite + React + TypeScript + TailwindCSS** jo GitHub Pages pe host karne ke liye ready hai.
+This project is a Vite + React + TypeScript + TailwindCSS scaffold, ready to be deployed on GitHub Pages.
 
-## Zyada important baatein (Roman Hindi)
+Important Points
 
-1. **Repo name**: `Interior-Web-Design` (base URL ke liye vite.config.ts me base set kiya gaya hai).
-2. **Install**:
+1. Repository Name
+2. Your repo name is: Interior-Web-Design
+3. The base URL is already set correctly inside vite.config.ts.
+4. Install Dependencies
    ```
    npm install
    ```
-3. **Development server**:
+5. Start the Development Server
    ```
    npm run dev
    ```
-   Localhost par chalne ke baad page blank nahi dikhega — example content milega.
-4. **Build**:
+   After the server starts, the page will not be blank — you will see example content displayed.
+6. Build for Production
    ```
    npm run build
    ```
-   `dist/` folder ready ho jayega.
-5. **Deploy to GitHub Pages** (optional):
-   - `homepage` field package.json me set hai: `https://<GITHUB_USERNAME>.github.io/Interior-Web-Design`
-   - GitHub username ko replace karo (`<GITHUB_USERNAME>`) apne username se.
-   - Install `gh-pages` agar nahi hai: `npm install --save-dev gh-pages`
-   - Fir run karo:
+   `The production-ready output will be generated inside the dist/ folder.
+7. Deploy to GitHub Pages (Optional)
+   - `The homepage field inside package.json is set to:`
+   - Replace <GITHUB_USERNAME> with your actual GitHub username.
+   - Install GitHub Pages deployment helper:
+   - npm install --save-dev gh-pages
+   - Deploy using:
      ```
      npm run deploy
      ```
-   - Ya manually `dist/` ko GitHub Pages ke gh-pages branch pe push karo.
+   - Push the generated dist/ folder manually to the gh-pages branch.
 
-## Notes
-- `vite.config.ts` me `base: '/Interior-Web-Design/'` set hai — agar aap repo ka naam change karte ho to isko bhi change karna padega.
-- Ye scaffold ek basic working template hai. Aap apne components, images aur CSS add kar sakte ho.
+Notes
+- `In vite.config.ts, the base option is set to:
+- base: '/Interior-Web-Design/'
 
-Good luck — agar chaho to main is repo me extra pages/components bhi bana doon.
 
-## Auto-deploy (GitHub Actions)
-Repo me GitHub Actions workflow add kiya gaya hai: `.github/workflows/deploy.yml`.
-Jab aap `main` branch pe push karoge, workflow build karke `dist/` ko GitHub Pages pe `gh-pages` branch me deploy kar dega.
-Ensure karo ke repository name `Interior-Web-Design` hi ho aur `vite.config.ts` me `base` sahi set ho.
+If you ever rename the repository, you must update this value accordingly.
+
+This scaffold is a basic working template.
+You can freely add your own components, images, and custom CSS.
+
+Auto-Deploy (GitHub Actions)
+
+A GitHub Actions workflow exists at.
+Whenever you push to the main branch:
+
+The workflow automatically builds the project.
+
+It deploys the dist/ folder to the gh-pages branch.
+
+Make sure:
+
+Your repository is named Interior-Web-Design
+
+The base value in vite.config.ts is correct.
