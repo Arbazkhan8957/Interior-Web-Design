@@ -177,7 +177,7 @@ Contact: hello@interiorstudio.example
             <div className="relative bg-white dark:bg-slate-900 rounded-3xl shadow-xl overflow-hidden border border-pink-100/80 dark:border-slate-700">
               <div
                 className="h-56 md:h-64 bg-cover bg-center"
-                style={{ backgroundImage: "url('src/assets/images/bedroom.png')" }}
+                style={{ backgroundImage: "url('dist/assets/images/bedroom.png')" }}
                 role="img"
                 aria-label="Calm bedroom concept"
               />
